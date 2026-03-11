@@ -783,6 +783,17 @@
         background: var(--white);
       }
 
+      .facebook-reviews-wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        min-height: 400px;
+      }
+      .facebook-reviews-wrap .fb-page,
+      .facebook-reviews-wrap iframe {
+        max-width: 100%;
+      }
+
       .swiper {
         padding-bottom: 56px;
       }
@@ -1239,6 +1250,8 @@
     </style>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0"></script>
     <!-- ═══ NAVBAR ═══ -->
     <nav class="navbar" id="navbar">
       <div class="navbar-inner">
@@ -1560,64 +1573,64 @@
           <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
             <img
               src="assets/compdoor.jpg"
-              alt="Composite door installation"
+              alt="Composite door installation with sidelights"
               loading="lazy"
             />
-            <div class="portfolio-overlay"><span>Door Installation</span></div>
+            <div class="portfolio-overlay"><span>Composite Door</span></div>
           </div>
           <div class="portfolio-item" data-aos="fade-up" data-aos-delay="150">
             <img
-              src="https://picsum.photos/600/400?random=2"
-              alt="Roofline project"
+              src="assets/blk%20fascia.jpg"
+              alt="Black fascia and guttering on brick building"
               loading="lazy"
             />
             <div class="portfolio-overlay">
-              <span>Roofline Replacement</span>
+              <span>Black Fascia &amp; Guttering</span>
             </div>
           </div>
           <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
             <img
-              src="https://picsum.photos/600/400?random=3"
-              alt="Guttering project"
+              src="assets/cladding.jpg"
+              alt="Exterior cladding, bi-fold doors and decking"
               loading="lazy"
             />
             <div class="portfolio-overlay">
-              <span>Guttering &amp; Fascias</span>
+              <span>Cladding &amp; Decking</span>
             </div>
           </div>
           <div class="portfolio-item" data-aos="fade-up" data-aos-delay="250">
             <img
-              src="https://picsum.photos/600/400?random=4"
-              alt="Window installation"
+              src="assets/green%20door.jpg"
+              alt="Sage green stable door installation"
               loading="lazy"
             />
             <div class="portfolio-overlay">
-              <span>Window Installation</span>
+              <span>Stable Door</span>
             </div>
           </div>
           <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
             <img
-              src="https://picsum.photos/600/400?random=5"
-              alt="Leak repair"
+              src="assets/ridges.jpg"
+              alt="Ridge tile installation on tiled roof"
               loading="lazy"
             />
             <div class="portfolio-overlay">
-              <span>Leak Detection &amp; Repair</span>
+              <span>Ridge Tiles &amp; Roofing</span>
             </div>
           </div>
           <div class="portfolio-item" data-aos="fade-up" data-aos-delay="350">
             <img
-              src="https://picsum.photos/600/400?random=6"
-              alt="PVC cladding"
+              src="assets/white%20fascia.jpg"
+              alt="White fascia and guttering"
               loading="lazy"
             />
-            <div class="portfolio-overlay"><span>PVC Cladding</span></div>
+            <div class="portfolio-overlay"><span>Fascia &amp; Guttering</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══ TESTIMONIALS ═══ -->
+    <!-- ═══ TESTIMONIALS / FACEBOOK REVIEWS ═══ -->
     <section class="testimonials-section" id="reviews">
       <div class="container">
         <div class="text-center">
@@ -1635,102 +1648,20 @@
         </div>
 
         <div
-          class="swiper testimonials-swiper"
+          class="facebook-reviews-wrap"
           data-aos="fade-up"
           data-aos-delay="150"
         >
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">
-                  "Brilliant service from start to finish. They found the leak
-                  within an hour and had it sorted the same day. Can't recommend
-                  them enough — saved us a fortune in potential damage."
-                </p>
-                <div class="testimonial-author">
-                  <div class="testimonial-avatar">JW</div>
-                  <div class="testimonial-info">
-                    <strong>James W.</strong>
-                    <span>Sheffield</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">
-                  "Had all our fascias, soffits and gutters replaced. The lads
-                  were punctual, tidy, and the finish is spot on. Whole house
-                  looks like new. Very fair price too."
-                </p>
-                <div class="testimonial-author">
-                  <div class="testimonial-avatar">SH</div>
-                  <div class="testimonial-info">
-                    <strong>Sarah H.</strong>
-                    <span>Rotherham</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">
-                  "We had persistent damp in our front bedroom. EPM traced it to
-                  a roofline defect no one else could find. Professional,
-                  honest, and really knew their stuff."
-                </p>
-                <div class="testimonial-author">
-                  <div class="testimonial-avatar">MP</div>
-                  <div class="testimonial-info">
-                    <strong>Mark P.</strong>
-                    <span>Barnsley</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">
-                  "Great job on our new front door and windows. They were
-                  patient with our questions, gave us a clear quote, and the
-                  installation was first class. Would happily use again."
-                </p>
-                <div class="testimonial-author">
-                  <div class="testimonial-avatar">KD</div>
-                  <div class="testimonial-info">
-                    <strong>Karen D.</strong>
-                    <span>Doncaster</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">
-                  "After two roofers let us down, EPM turned up when they said
-                  they would and did exactly what was agreed. Guttering
-                  replaced, leak fixed, no mess. Refreshing to deal with."
-                </p>
-                <div class="testimonial-author">
-                  <div class="testimonial-avatar">TB</div>
-                  <div class="testimonial-info">
-                    <strong>Tom B.</strong>
-                    <span>Chesterfield</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="fb-page"
+            data-href="https://www.facebook.com/ExteriorPropertyMaintenance"
+            data-tabs="timeline"
+            data-width="500"
+            data-height="600"
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true">
           </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -1905,17 +1836,7 @@
           });
         });
 
-        /* ── Swiper testimonials ──────────────────────── */
-        new Swiper(".testimonials-swiper", {
-          slidesPerView: 1,
-          spaceBetween: 24,
-          autoplay: { delay: 5000, disableOnInteraction: false },
-          pagination: { el: ".swiper-pagination", clickable: true },
-          breakpoints: {
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          },
-        });
+        /* ── Swiper testimonials (removed; using Facebook embed) ── */
 
         /* ── CountUp with IntersectionObserver ─────────── */
         var counted = false;
@@ -1980,5 +1901,6 @@
         });
       })();
     </script>
+    <!-- Facebook Page Plugin loads via SDK above (xfbml=1) -->
   </body>
 </html>
